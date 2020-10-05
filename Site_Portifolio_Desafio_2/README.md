@@ -1,23 +1,22 @@
-<h1 align="center"><img src="https://github.com/dimasdevspro/reviewFrontEnd/blob/master/LogoReviewFrontEnd.gif" height="150" weigth="150"></h1>
+<h1 align="center"><img src="assets/LogoReviewFrontEnd.gif" height="150" weigth="150"></h1>
 
 <p align="center"><img src="https://img.shields.io/badge/<HTML>-<green>"> <img src="https://img.shields.io/badge/<CSS>-<green>"> <img src="https://img.shields.io/badge/<Javascript>-<green>"> <img src="https://img.shields.io/badge/<NodeJs>-<green>"></p>
 
-<h1 align="center>ReviewFrontEnd</h1>
+### Indice
+<!--ts-->
+* [Indice](#indice)
+* [Sobre](#sobre)
+* [Status do Projeto](#status-do-projeto)
+* [Features](#features)
+* [Demonstração da Aplicação](#demonstração-da-aplicação)
+* [Pré-requisitos](#pré-requisitos)
+* [Testes](#testes)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Autor](#autor)
+* [Licença](#licença)
+<!--te-->
 
-# Indice
-
-- [Sobre](#-sobre)
-- [Status do Projeto](#-status-do-projeto)
-- [Features](#-features)
-- [Demonstração da Aplicação](#-demonstração-da-aplicação)
-- [Pré-requisitos](#-pré-requisitos)
-- [Testes](#-testes)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Autor](#-autor)
-- [Licença](#-licença)
-
-
-## Sobre
+### Sobre
 
 <p align="center">Review - Criação de um site com links, menu, pop-up(iframe), posts. Desafios propostos pela Rocketseat no Bootcamp Launchbase:</p>
 <ul >
@@ -34,29 +33,30 @@
 </ul>
 
 
-## Status do Projeto
+### Status do Projeto
 
 <h4> 
 	👌 Concluído 👌
 </h4>
 
 
-## Features
+### Features
 
 - [x] Página com menu
 - [x] Página Sobre
 - [x] Página com conteúdo
 
 
-## Demonstração da Aplicação
+### Demonstração da Aplicação
 
-<h1 align="center"><img src="https://github.com/dimasdevspro/reviewFrontEnd/blob/master/site_apli_p1_1.png" height="150" weigth="150"></h1>
+<h1 align="center"><img src="screenshots/site_apli_p1_1.png" height="350" weigth="350"></h1>
 
-<h1 align="center"><img src="https://github.com/dimasdevspro/reviewFrontEnd/blob/master/site_apli_p1_2.png" height="150" weigth="150"></h1>
+<h1 align="center"><img src="screenshots/site_apli_p1_2.png" height="350" weigth="350"></h1>
 
 Ou acesse a aplicação na <a href="https://dimasdevspro.github.io/Projeto%201%20-%20Portfolio/d2_1_index.html" target="_blank">rede</a>
 
-## Pré-requisitos
+
+### Pré-requisitos
 
 Para começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
@@ -67,7 +67,7 @@ Para começar, você vai precisar ter instalado em sua máquina as seguintes fer
 - E um servidor de Testes do VSCode [LiveServer](https://ritwickdey.github.io/vscode-live-server/);
 
 
-## Testes
+### Testes
 
 
 ```bash
@@ -101,7 +101,7 @@ $ Alt+L Alt+O
 ```
 
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -109,7 +109,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Git](https://git-scm.com)
 
 
-## Autor
+### Autor
 
 ---
 
@@ -125,6 +125,6 @@ Feito com ❤️ por Dimas 👋🏽 Entre em contato!
 [![Gmail Badge](https://img.shields.io/badge/-dimasdevspro@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:dimasdevspro@gmail.com)](mailto:dimasdevspro@gmail.com)
 
 
-## Licença
+### Licença
 
 <img alt="APM" src="https://img.shields.io/apm/l/vim-mode">
