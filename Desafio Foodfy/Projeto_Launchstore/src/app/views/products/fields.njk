@@ -1,10 +1,10 @@
 <div class="item">
     <div>Categoria</div>
     <div>
-        <select name="category_id">
-            {% for category in categories %}
-                <option value="{{category.id}}" {% if product.category_id == category.id %} selected="selected" {% endif %}>
-                    {{category.name}}
+        <select name="categories_id">
+            {% for categories in categories %}
+                <option value="{{categories.id}}" {% if product.categories_id == categories.id %} selected="selected" {% endif %}>
+                    {{categories.name}}
                 </option>
                 {%endfor%}
             </select>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="item">
-        <div>Name</div>
+        <div>Título</div>
         <div>
             <input type="text" name="name" placeholder="Digite o Título do Anúncio" value="{{ product.name }}">
         </div>
@@ -21,9 +21,7 @@
     <div class="item">
         <div>Descrição</div>
         <div>
-            <textarea name="description">
-                {{product.description}}
-            </textarea>
+            <textarea name="description">{{product.description}}</textarea>
         </div>
     </div>
 
@@ -37,8 +35,8 @@
             name="price" 
             placeholder="Preço do Produto" 
             value="{{ product.price }}" 
-            {# Faremo uma máscara de dinheiro/reais #}>
-        </div>
+            onkeydown="Mask.apply(this, 'formatBRL')">
+                </div>
         {% if product.old_price %}
             <input type="hidden" name="old_price" value="{{product.old_price}}">
         {% endif %}
@@ -54,7 +52,7 @@
         </div>
     </div>
     
-{% if product.status %}
+{% if not (product.status == '1') or (product.status == '0') %}
     <div class="item">
         <div>Disponível ?</div>
         <div>

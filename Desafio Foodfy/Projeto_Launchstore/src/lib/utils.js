@@ -18,30 +18,12 @@ module.exports = {
 
         }
     },
-
-    graduation(type) {
-        
-        const graduations = {
-            medio: 'Ensino Médio Completo',
-            superior: 'Ensino Superior Completo',
-            mestre: 'Mestrado',
-            doutor: 'Doutorado',
-        }
-
-        return graduations[type] || graduations.default
-    },
-
-    grade(type) {
-        const grades = {
-            ef5: "5º Ano do Ensino Fundamental",
-            ef6: "6º Ano do Ensino Fundamental",
-            ef7: "7º Ano do Ensino Fundamental",
-            ef8: "8º Ano do Ensino Fundamental",
-            ef9: "9º Ano do Ensino Fundamental",
-            em1: "1º Ano do Ensino Médio",
-            em2: "2º Ano do Ensino Médio",
-            em3: "3º Ano do Ensino Médio",
-        }
-        return grades[type] || grades.default
-    },
+    formatPrice(price){
+        return new Intl.NumberFormat("pt-BR", {
+            style: 'currency',
+            currency: 'BRL'
+        }).format(price/100)
+    }
+    
+    
 }
