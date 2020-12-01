@@ -226,7 +226,7 @@ form .item textarea {
 form .item span {
     padding: 8px 16px;
     color: #777;
-    background-color: var(--secundary-color);
+    background-color: var(--primary-color);
     border-radius: 16px;
     font-size: 12px;
     font-weight: bold;
@@ -234,4 +234,91 @@ form .item span {
     display: inline-block;
     margin-top: 8px;
     text-transform: uppercase;
+  }
+
+  /* PHOTOS UPLOAD */
+
+  form .item #photos-upload {
+      position: relative;
+
+      display: block;
+      overflow: hidden;
+
+      width: 200px;
+  }
+
+  form .item #photos-upload p {
+      padding: 8px 16px;
+      border-radius: 4px;
+      box-shadow: 0 2px 2px -6px #333;
+      background-color: var(--primary-color);
+      color: white;
+
+      width: 100%;
+      text-align: center;
+
+      cursor: pointer;
+
+      text-transform: uppercase;
+      font-size: 14px;
+  }
+
+  form .item #photos-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+  }
+
+  form .item #photos-preview {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 8px;
+      width: 100%;
+      margin: 8px 0;
+  }
+
+  form .item #photos-preview img {
+      width: 100%;
+      height: 150px;
+
+      object-fit: cover;
+
+  }
+
+  #photos-preview .photo {
+      position: relative;
+  }
+
+  #photos-preview .photo i{
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background: rgba(255, 255, 255, 0.8);
+
+      color: red;
+
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 500%;
+      cursor: pointer;
+
+      transition: opacity 200ms;
+      
+      opacity: 0;
+  }
+
+  #photos-preview .photo:hover i{
+      opacity: 1;
   }
