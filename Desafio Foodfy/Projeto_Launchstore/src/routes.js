@@ -13,6 +13,7 @@ routes.get("/views/about", function(req, res){
 
 //Admin
 routes.get("/products/create", ProductController.create);
+routes.get("/products/:id", ProductController.show)
 routes.get("/products/:id/edit", ProductController.edit)
 routes.post('/products', multer.array("photos", 6),ProductController.post)
 routes.put('/products', multer.array("photos", 6), ProductController.put)
